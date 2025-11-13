@@ -1,0 +1,7 @@
+# 默认配置
+url: "https://httpbin.org/html"
+selector: "h1"
+output: "output/results.csv"
+headers:
+  User-Agent: "Mozilla/5.0 (compatible; Scraper/1.0)"
+timeout: 10

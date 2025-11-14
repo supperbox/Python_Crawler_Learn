@@ -1,3 +1,12 @@
+# 建议先升级 pip/setuptools/wheel（避免找不到合适的 wheel）：
+#   python -m pip install --upgrade pip setuptools wheel
+# 然后安装依赖：
+#   python -m pip install -r requirements.txt
+
 requests
 beautifulsoup4
-PyYAML
+pyyaml
+
+
+# 如果仍无法安装 pyyaml，可考虑改用纯 Python 的替代：
+# ruamel.yaml

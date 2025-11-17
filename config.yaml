@@ -1,7 +1,15 @@
 # 默认配置
-url: "https://httpbin.org/html"
-selector: "h1"
+url: "https://www.xiaohongshu.com"
+# 进入小红书网站后，动态输入关键词“氛围感”并进行搜索，搜索完成后再下载内容
+selector: "img" # CSS选择器，用于提取图片
 output: "output/results.csv"
 headers:
-  User-Agent: "Mozilla/5.0 (compatible; Scraper/1.0)"
-timeout: 10
+  User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+timeout: 30
+dynamic_render: true # 启用动态渲染
+output_dir: "output/images" # 图片保存目录
+scroll_times: 5 # 滚动次数，加载更多内容
+wait_time: 2 # 每次滚动后等待时间（秒）
+search_keyword: "氛围感图片"
+cookie_file: "cookies.pkl"
+required_images: 200 # 新增：需要下载的图片数量（默认200）
